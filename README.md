@@ -2,465 +2,254 @@
 
 ### AI-Powered Full-Stack E-Commerce Platform
 
-**GoMart** is a modern, full-stack e-commerce platform built to explore real-world application development by combining **Full Stack Development, AI, 3D Web Experiences, Docker, AWS, and DevOps practices**.
+**GoMart** is a full-stack e-commerce project being developed to build practical experience in **Full-Stack Development, AI Integration, 3D Web Development, Docker, AWS, and DevOps**.
+
+The project will be developed progressively, starting with the core application and gradually introducing **containerization, cloud deployment, and DevOps practices**.
 
 > 🚧 **Status:** In Development
+> 🎯 **Goal:** Learn and apply modern full-stack and cloud technologies through one real-world project.
 
 ---
 
-## 🌐 Overview
+## 💡 About the Project
 
-GoMart aims to provide a modern and intelligent shopping experience while serving as a practical exploration of how a production-style web application is designed, developed, containerized, deployed, and maintained.
+GoMart is not just an e-commerce website. It is a learning-focused project where I am exploring how a modern web application can be:
 
-The project combines:
+* Built from scratch
+* Connected to a database
+* Enhanced with AI
+* Extended with 3D experiences
+* Containerized using Docker
+* Deployed to AWS
+* Managed using DevOps practices
 
-**Full Stack + AI + 3D + Docker + AWS + DevOps**
-
-into a single application.
-
----
-
-## ✨ Core Features
-
-### 🛍️ E-Commerce
-
-* User registration and login
-* Product browsing
-* Product search
-* Category filtering
-* Product details
-* Shopping cart
-* Wishlist
-* Checkout
-* Order management
-* Product reviews and ratings
-
-### 🤖 AI-Powered Features
-
-* AI shopping assistant
-* Personalized product recommendations
-* Natural-language product search
-* Product comparison assistance
-* AI-generated product insights
-
-### 🧊 3D Experience
-
-* Interactive 3D product models
-* 360° product viewing
-* Interactive product visualization
-* Three.js / React Three Fiber integration
-
-### 👨‍💼 Admin
-
-* Admin dashboard
-* Product management
-* Inventory management
-* Category management
-* Order management
-* User management
+The project will evolve as I learn each technology.
 
 ---
 
-# 🛠️ Tech Stack
+# 🛠️ Technology Stack
 
-## Frontend
+### Frontend
 
 * React.js
 * Vite
 * JavaScript
 * Tailwind CSS
-* Three.js
-* React Three Fiber
+* Three.js / React Three Fiber
 
-## Backend
+### Backend
 
 * Node.js
 * Express.js
 * REST APIs
 
-## Database
+### Database
 
 * MongoDB
 * Mongoose
 
-## AI
+### AI
 
-* AI / LLM API
-* Recommendation system
+* AI / LLM APIs
 * AI shopping assistant
+* Product recommendation features
 
-## DevOps
+### Currently Learning / Planned
 
 * Docker
 * Docker Compose
-* Git
-* GitHub
-* CI/CD
-* Environment management
-
-## Cloud
-
 * AWS
-* AWS EC2
-* AWS S3
-* AWS IAM
-* AWS CloudWatch
+* DevOps
+* CI/CD
+* GitHub Actions
+* Cloud deployment
+* Application monitoring
 
-> AWS services may change as the project architecture evolves.
-
----
-
-# 🏗️ Architecture
-
-```text
-                         ┌────────────────────┐
-                         │       Users        │
-                         └─────────┬──────────┘
-                                   │
-                                   ▼
-                         ┌────────────────────┐
-                         │ React + Vite       │
-                         │ Frontend           │
-                         └─────────┬──────────┘
-                                   │
-                              REST API
-                                   │
-                                   ▼
-                         ┌────────────────────┐
-                         │ Node + Express      │
-                         │ Backend             │
-                         └──────┬───────┬─────┘
-                                │       │
-                    ┌───────────┘       └───────────┐
-                    ▼                               ▼
-          ┌─────────────────┐             ┌─────────────────┐
-          │    MongoDB      │             │   AI Services   │
-          │    Database     │             │                 │
-          └─────────────────┘             └─────────────────┘
-
-                         Docker
-                            │
-                            ▼
-                    Containerized App
-                            │
-                            ▼
-                           AWS
-                            │
-              ┌─────────────┴─────────────┐
-              ▼                           ▼
-           Compute                     Storage
-           / Hosting                    / Assets
-```
+> **Note:** Docker, AWS, and DevOps are being learned and introduced progressively during the development of GoMart.
 
 ---
 
-# 🐳 Docker
+# 🎯 Learning Objectives
 
-GoMart will use Docker to containerize the application and create a consistent development and deployment environment.
+Through GoMart, I want to gain practical experience in:
 
-### Planned Containers
+### Full Stack Development
 
-```text
-Frontend Container
-       │
-       ├── React
-       └── Vite
+* Building a complete frontend
+* Designing backend APIs
+* Connecting frontend and backend
+* Working with databases
+* Authentication and authorization
+* Managing application state
 
-Backend Container
-       │
-       ├── Node.js
-       └── Express
+### AI Integration
 
-Database
-       │
-       └── MongoDB
-```
+* Integrating AI APIs
+* Building an AI shopping assistant
+* Understanding recommendation systems
+* Using AI in a real-world application
 
-Docker Compose will be used to manage multiple services during development.
+### 3D Web Development
 
-### Docker Goals
+* Learning Three.js
+* Working with React Three Fiber
+* Displaying interactive 3D products
+* Understanding WebGL-based experiences
 
-* Containerize frontend
-* Containerize backend
-* Configure multi-container development
-* Manage environment variables
-* Create reproducible environments
-* Prepare the application for cloud deployment
+### Docker
 
----
+**Learning goal:** Understand how applications are containerized and run consistently across environments.
 
-# ☁️ AWS
+Planned learning:
 
-GoMart will be deployed using AWS services as the project progresses.
+* [ ] Docker fundamentals
+* [ ] Images and containers
+* [ ] Dockerfile
+* [ ] Docker volumes
+* [ ] Docker networks
+* [ ] Environment variables
+* [ ] Docker Compose
+* [ ] Containerizing GoMart
 
-### Planned AWS Services
+### AWS
 
-| Service        | Purpose                |
-| -------------- | ---------------------- |
-| **EC2**        | Application hosting    |
-| **S3**         | File/object storage    |
-| **IAM**        | Access and permissions |
-| **CloudWatch** | Monitoring and logs    |
+**Learning goal:** Learn how to deploy and run a web application on the cloud.
 
-Additional AWS services may be introduced as the architecture develops.
+Planned learning:
 
----
+* [ ] AWS fundamentals
+* [ ] IAM
+* [ ] EC2
+* [ ] S3
+* [ ] Environment configuration
+* [ ] Application deployment
+* [ ] CloudWatch
+* [ ] Understanding AWS security
 
-# ⚙️ DevOps
+### DevOps
 
-GoMart will also be used to learn and implement practical DevOps concepts.
+**Learning goal:** Understand how software moves from development to deployment and how applications are maintained.
 
-### DevOps Roadmap
+Planned learning:
 
 * [ ] Git workflow
-* [ ] Docker
-* [ ] Docker Compose
-* [ ] Environment configuration
-* [ ] CI/CD
+* [ ] CI/CD fundamentals
 * [ ] GitHub Actions
+* [ ] Automated builds
+* [ ] Automated testing
+* [ ] Docker-based deployment
 * [ ] AWS deployment
-* [ ] Application monitoring
-* [ ] Logging
+* [ ] Logging and monitoring
 * [ ] Deployment automation
-* [ ] Production configuration
 
 ---
 
-# 🔄 Development Workflow
+# 🏗️ Planned Architecture
+
+The architecture will evolve as new technologies are learned.
+
+### Initial Architecture
 
 ```text
-Developer
-    │
-    ▼
-Git + GitHub
-    │
-    ▼
-Development
-    │
-    ▼
-Docker
-    │
-    ▼
-Testing
-    │
-    ▼
-CI/CD Pipeline
-    │
-    ▼
-AWS
-    │
-    ▼
-Production
+User
+  │
+  ▼
+React + Vite
+  │
+  ▼
+Node.js + Express
+  │
+  ▼
+MongoDB
 ```
 
----
-
-# 📁 Project Structure
+### Later Architecture
 
 ```text
-GoMart/
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── Dockerfile
-│   └── package.json
-│
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   ├── services/
-│   ├── Dockerfile
-│   └── package.json
-│
-├── ai/
-│   ├── recommendations/
-│   └── assistant/
-│
-├── compose.yaml
-├── .gitignore
-├── .dockerignore
-└── README.md
+                         User
+                           │
+                           ▼
+                    React + Vite
+                           │
+                           ▼
+                    Backend API
+                           │
+                ┌──────────┴──────────┐
+                ▼                     ▼
+             MongoDB              AI Services
+                │
+                │
+                ▼
+             Docker
+                │
+                ▼
+               AWS
+                │
+                ▼
+          CI/CD + DevOps
 ```
 
 ---
 
-# 🚀 Getting Started
+# 🧩 Planned Features
 
-## 1. Clone the repository
+## 🛍️ E-Commerce
 
-```bash
-git clone <repository-url>
-cd GoMart
-```
-
-## 2. Install dependencies
-
-Install dependencies for both the frontend and backend.
-
-```bash
-cd frontend
-npm install
-```
-
-```bash
-cd ../backend
-npm install
-```
-
-## 3. Configure environment variables
-
-Create environment files for the required configuration.
-
-Example:
-
-```env
-MONGO_URI=
-JWT_SECRET=
-AI_API_KEY=
-```
-
-Never commit sensitive credentials to GitHub.
-
-## 4. Run the application
-
-Start the frontend and backend using their respective development commands.
-
-Docker-based development will be added as the containerized architecture is implemented.
-
----
-
-# 🐳 Docker Setup
-
-The project will support Docker-based development.
-
-Initialize Docker configuration:
-
-```bash
-docker init
-```
-
-Build and run the application using Docker Compose:
-
-```bash
-docker compose up --build
-```
-
-Stop the containers:
-
-```bash
-docker compose down
-```
-
----
-
-# 📈 Development Roadmap
-
-### Phase 1 — Foundation
-
-* [x] Repository setup
-* [ ] React + Vite setup
-* [ ] Backend setup
-* [ ] MongoDB connection
-* [ ] Basic project architecture
-
-### Phase 2 — E-Commerce
-
-* [ ] Authentication
-* [ ] Products
-* [ ] Search
-* [ ] Categories
-* [ ] Cart
+* [ ] User registration and login
+* [ ] Product listing
+* [ ] Product search
+* [ ] Category filtering
+* [ ] Product details
+* [ ] Shopping cart
 * [ ] Wishlist
 * [ ] Checkout
 * [ ] Orders
-* [ ] Reviews
+* [ ] Reviews and ratings
 
-### Phase 3 — AI
+## 🤖 AI
 
 * [ ] AI shopping assistant
-* [ ] Product recommendations
-* [ ] Natural-language search
+* [ ] Personalized recommendations
+* [ ] Natural-language product search
 * [ ] AI product comparison
+* [ ] AI-generated product information
 
-### Phase 4 — 3D
+## 🧊 3D
 
 * [ ] Three.js integration
 * [ ] 3D product models
 * [ ] Interactive product viewer
+* [ ] 360° product interaction
 
-### Phase 5 — Docker
+## 🔐 Security
 
-* [ ] Frontend container
-* [ ] Backend container
-* [ ] Docker Compose
-* [ ] Production Docker configuration
-
-### Phase 6 — DevOps
-
-* [ ] GitHub Actions
-* [ ] CI pipeline
-* [ ] Automated testing
-* [ ] CD pipeline
-* [ ] Deployment automation
-
-### Phase 7 — AWS
-
-* [ ] AWS account/project setup
-* [ ] IAM configuration
-* [ ] Application deployment
-* [ ] S3 integration
-* [ ] CloudWatch monitoring
-* [ ] Production deployment
+* [ ] Authentication
+* [ ] Authorization
+* [ ] Protected APIs
+* [ ] Password security
+* [ ] Environment variable management
+* [ ] API security
 
 ---
 
-# 🎯 Project Goals
+# 🐳 Docker Learning Roadmap
 
-GoMart is being developed to gain practical experience in:
+Docker will be introduced after the basic application is working.
 
-* Full-stack application development
-* REST API design
-* Database management
-* Authentication and authorization
-* AI integration
-* 3D web development
-* Containerization
-* Cloud deployment
-* CI/CD
-* DevOps practices
-* Application monitoring
-
----
-
-# 🔮 Future Improvements
-
-Possible future improvements include:
-
-* AI-powered visual search
-* Voice-based shopping
-* Advanced recommendation algorithms
-* Real-time notifications
-* Smart product comparison
-* AI-generated product summaries
-* Advanced analytics
-* Automated CI/CD
-* Scalable cloud architecture
-* Performance optimization
-* Security hardening
-
----
-
-# 👨‍💻 Developer
-
-**Abhijeet Kumar Jha**
-
-Full-Stack Developer | Java DSA Enthusiast
-
----
-
-## 📄 License
-
-This project is being developed for learning, experimentation, and portfolio purposes.
+```text
+Learn Docker Basics
+        ↓
+Understand Images
+        ↓
+Understand Containers
+        ↓
+Create Dockerfile
+        ↓
+Containerize Backend
+        ↓
+Containerize Frontend
+        ↓
+Learn Docker Compose
+        ↓
+Run GoMart with
+```
