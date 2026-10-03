@@ -1,3 +1,30 @@
+<<<<<<< HEAD
 Backend/node_modules/
 Frontend/node_modules/
 .env
+=======
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+>>>>>>> d29f739df7bb6480df7c9c723aaadf758f4cc4fe
